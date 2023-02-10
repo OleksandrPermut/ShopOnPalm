@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Create new Product</title>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to shops network managment system</h1>
+            <h2><a href="index.html">Home</a> - <a href="Products.html">Products</a> - <a href="CreateProduct.html">Create product</a></h2>
+        </div>
+
+        <div class="main-content">
+            <div class="left-content">
+                <form action="http://localhost:8080/products" method="POST" onsubmit="CreateProduct(event)">
+                    <label for="fname">Product name:</label><br />
+                    <input required type="text" id="name" name="name"><br />
+                    <br />
+                    <input type="submit" value="Create">
+                </form>
+
+                <hr />
+                <a href="Products.html">Cancel</a>
+            </div>
+            <div class="right-panel">
+                <h3>Main menu</h3>
+                <p>
+                    <a href="Shops.html"><i class="fa fa-shopping-cart"></i><br /> Manage shops network</a>
+                </p>
+                <p>
+                    <a href="Products.html"><i class="fa fa-th-list"></i><br />List of available products</a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <h3>
+                <a href="https://www.instagram.com/permut.s/?hl=ru">My Instagram</a>
+            </h3>
+        </div>
+    </div>
+
+   
+
+    <script src="JS/CreateProduct.js"></script>
+</body>
+</html>

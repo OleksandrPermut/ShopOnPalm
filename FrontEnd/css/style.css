@@ -1,0 +1,133 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7FFFD4;
+    align-self: center;
+    border-style: double;
+}
+
+.main-content {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    background-color: #e6e6fa;
+    border-style: double;
+}
+
+@media (max-width: 800px) {
+    .main-content {
+        flex-direction: column;
+    }
+}
+
+.left-content {
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    width:90%;
+}
+
+.right-panel {
+    border-width: 1px;
+    border-style: solid;
+    padding: 10px;
+    width: 90%;
+}
+
+.right-panel-footer {
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+}
+
+.comments {
+    width: 60%;
+    display: flex;
+    align-self: center;
+    background-color: bisque;
+    border-style: dotted;
+    flex-direction: column;
+}
+
+.footer {
+    background-color: #7FFFD4;
+    width: 60%;
+    align-self: center;
+    border-style: double;
+    text-align: center;
+}
+
+.text {
+    text-indent: 20px
+}
+
+.image-lable {
+    margin-left: 5px;
+}
+
+#comments-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+#comments-list {
+    width: 40%;
+    align-self: center;
+    border-style: dashed;
+    padding: 10px;
+    margin: 20px;
+}
+
+#image-container {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    background-color: #0e0e0eb0;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+#image-container img
+{
+    height: 80%;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+}
+
+table th {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef;
+    border: 1px solid #dddddd;
+}
+
+table td {
+    border: 1px solid #dddddd;
+    padding: 5px;
+    background-color: aliceblue;
+}
+
+.fa
+{
+    font-size: 25px;
+}
